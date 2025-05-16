@@ -115,7 +115,7 @@ export const FEATURE_ITEMS: PlansFeatures[] = [
 export const LICENSE_PLANS_INFORMATION: LicensePlanOption[] = [
   {
     planId: "openSource",
-    planName: "Community Edition",
+    planName: "Community",
     planType: "open-source",
     planIcon: (
       <ApplicationLogo applicationName={"console"} subVariant={"AGPL"} />
@@ -124,7 +124,7 @@ export const LICENSE_PLANS_INFORMATION: LicensePlanOption[] = [
   },
   {
     planId: "eosPlus",
-    planName: "Enterprise Edition",
+    planName: "Enterprise",
     planType: "commercial",
     planIcon: (
       <ApplicationLogo applicationName={"minio"} subVariant={"enterpriseos"} />
