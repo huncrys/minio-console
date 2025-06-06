@@ -1670,6 +1670,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.27.1":
+  version: 7.27.6
+  resolution: "@babel/runtime@npm:7.27.6"
+  checksum: 10c0/89726be83f356f511dcdb74d3ea4d873a5f0cf0017d4530cb53aa27380c01ca102d573eff8b8b77815e624b1f8c24e7f0311834ad4fb632c90a770fda00bd4c8
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.25.9, @babel/template@npm:^7.3.3":
   version: 7.25.9
   resolution: "@babel/template@npm:7.25.9"
@@ -3063,19 +3070,6 @@ __metadata:
   dependencies:
     "@sinonjs/commons": "npm:^1.7.0"
   checksum: 10c0/d6b795f9ddaf044daf184c151555ca557ccd23636f2ee3d2f76a9d128329f81fc1aac412f6f67239ab92cb9390aad9955b71df93cf4bd442c68b1f341e381ab6
-  languageName: node
-  linkType: hard
-
-"@snyk/github-codeowners@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@snyk/github-codeowners@npm:1.1.0"
-  dependencies:
-    commander: "npm:^4.1.1"
-    ignore: "npm:^5.1.8"
-    p-map: "npm:^4.0.0"
-  bin:
-    github-codeowners: dist/cli.js
-  checksum: 10c0/92d860a904a1e67f8563d4ac4d540cc613f71193f7968933b4a4b1526e80a97f536f52d27762c158e3e39d48c2f3db4906ec78846309351c741abb1a28653af9
   languageName: node
   linkType: hard
 
@@ -7211,12 +7205,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-gpu@npm:^5.0.39":
-  version: 5.0.57
-  resolution: "detect-gpu@npm:5.0.57"
+"detect-gpu@npm:^5.0.70":
+  version: 5.0.70
+  resolution: "detect-gpu@npm:5.0.70"
   dependencies:
     webgl-constants: "npm:^1.1.1"
-  checksum: 10c0/053ce27e4f19e11b0a685923b6dbeda9e156bd24e1fc71a35bc0237d5157c6d199d0ed0ce8c2a22cc434edecac34681f1b015fa7dc298beccc492c92dffd703c
+  checksum: 10c0/5a2053d4779edb3490821599b316b5362c8b55c30b82806c64bcfd21f40c67e2debfd677937899080aea2b27765471552bafeeae9c9f1cf63bdd07461a7e2163
   languageName: node
   linkType: hard
 
@@ -11982,7 +11976,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"luxon@npm:^3.4.4, luxon@npm:^3.6.1":
+"luxon@npm:^3.6.1":
   version: 3.6.1
   resolution: "luxon@npm:3.6.1"
   checksum: 10c0/906d57a9dc4d1de9383f2e9223e378c298607c1b4d17b6657b836a3cd120feb1c1de3b5d06d846a3417e1ca764de8476e8c23b3cd4083b5cdb870adcb06a99d5
@@ -15214,7 +15208,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-calendar@npm:^5.0.0":
+"react-calendar@npm:^5.1.0":
   version: 5.1.0
   resolution: "react-calendar@npm:5.1.0"
   dependencies:
@@ -15555,16 +15549,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-use-websocket@npm:^4.8.1":
-  version: 4.8.1
-  resolution: "react-use-websocket@npm:4.8.1"
-  peerDependencies:
-    react: ">= 18.0.0"
-    react-dom: ">= 18.0.0"
-  checksum: 10c0/9106947334badc06d8af635328f1420068098130eac8f6da90e7d13cf37037cf1cf0bd528103ca3689a38097a70e10d3b577f143078254e9dd3b9aa429395116
-  languageName: node
-  linkType: hard
-
 "react-virtual@npm:^2.8.2":
   version: 2.10.4
   resolution: "react-virtual@npm:2.10.4"
@@ -15573,23 +15557,6 @@ __metadata:
   peerDependencies:
     react: ^16.6.3 || ^17.0.0
   checksum: 10c0/96813e174f21e044152c09da4782b97dd55a6e32ddad743b39a79afc69e525d591b3263f7001f0e7f453ca5316743a2192bcb6a3686ce1b0ec14d1be8a2ea8e0
-  languageName: node
-  linkType: hard
-
-"react-virtualized@npm:^9.22.5":
-  version: 9.22.5
-  resolution: "react-virtualized@npm:9.22.5"
-  dependencies:
-    "@babel/runtime": "npm:^7.7.2"
-    clsx: "npm:^1.0.4"
-    dom-helpers: "npm:^5.1.3"
-    loose-envify: "npm:^1.4.0"
-    prop-types: "npm:^15.7.2"
-    react-lifecycles-compat: "npm:^3.0.4"
-  peerDependencies:
-    react: ^15.3.0 || ^16.0.0-alpha || ^17.0.0 || ^18.0.0
-    react-dom: ^15.3.0 || ^16.0.0-alpha || ^17.0.0 || ^18.0.0
-  checksum: 10c0/b0444b472f317dce61119c07426c5e9ebfe5125d049996678da922717715a1aa83df755aa36877f4b1718aa2e181d22f15ebb807ee356418c56f922f865628c1
   languageName: node
   linkType: hard
 
@@ -19026,7 +18993,6 @@ __metadata:
     react-redux: "npm:^8.1.3"
     react-router-dom: "npm:6.30.0"
     react-scripts: "npm:5.0.1"
-    react-use-websocket: "npm:^4.8.1"
     react-virtualized: "npm:^9.22.6"
     react-window: "npm:^1.8.11"
     react-window-infinite-loader: "npm:^1.0.10"
