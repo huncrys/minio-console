@@ -1,0 +1,8 @@
+.git
+.github
+*.gz
+*.tar.gz
+*.bzip2
+*.zip
+Dockerfile*
+web-app/node_modules
