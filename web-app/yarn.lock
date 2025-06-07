@@ -12174,9 +12174,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mds@https://github.com/minio/mds.git#v1.1.3":
+"mds@https://oaklab.hu/minio/mds.git#v1.1.3":
   version: 1.1.3
-  resolution: "mds@https://github.com/minio/mds.git#commit=ed34ced6ff27df3aacf5ba5456e2f954573e4445"
+  resolution: "mds@https://oaklab.hu/minio/mds.git#commit=ed34ced6ff27df3aacf5ba5456e2f954573e4445"
   dependencies:
     "@storybook/test": "npm:^8.6.12"
     "@types/styled-components": "npm:^5.1.34"
@@ -18977,7 +18977,7 @@ __metadata:
     local-storage-fallback: "npm:^4.1.3"
     lodash: "npm:^4.17.21"
     luxon: "npm:^3.6.1"
-    mds: "https://github.com/minio/mds.git#v1.1.3"
+    mds: "https://oaklab.hu/minio/mds.git#v1.1.3"
     minio: "npm:^8.0.5"
     nyc: "npm:^15.1.0"
     prettier: "npm:3.5.3"
