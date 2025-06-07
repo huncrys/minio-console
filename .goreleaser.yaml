@@ -1,0 +1,64 @@
+# This is an example .goreleaser.yml file with some sensible defaults.
+# Make sure to check the documentation at https://goreleaser.com
+
+# The lines below are called `modelines`. See `:help modeline`
+# Feel free to remove those if you don't want/need to use them.
+# yaml-language-server: $schema=https://goreleaser.com/static/schema.json
+# vim: set ts=2 sw=2 tw=0 fo=cnqoj
+
+version: 2
+
+project_name: console
+before:
+  hooks:
+    - go mod tidy
+
+gitlab_urls:
+  api: https://oaklab.hu/api/v4
+  download: https://oaklab.hu
+  use_package_registry: true
+
+release:
+  github:
+    owner: huncrys
+    name: minio-console
+
+builds:
+  - env:
+      - CGO_ENABLED=0
+    main: ./cmd/console
+    flags:
+      - -trimpath
+      - -tags=kqueue
+    ldflags:
+      - -s
+      - -w
+      - -X github.com/minio/console/pkg.Version={{.Version}}
+      - >-
+        {{- if not .IsSnapshot }}
+          -X github.com/minio/console/pkg.ReleaseTag={{.Tag}}
+        {{- end }}
+      - -X github.com/minio/console/pkg.ReleaseTime={{.Date}}
+      - -X github.com/minio/console/pkg.CommitID={{.Commit}}
+      - -X github.com/minio/console/pkg.ShortCommitID={{.ShortCommit}}
+    goos:
+      - linux
+    goarch:
+      - amd64
+      - arm64
+      - ppc64le
+
+archives:
+  - formats: 
+      - tar.gz
+      - binary
+    files:
+      - LICENSE
+      - README.md
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"
