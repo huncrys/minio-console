@@ -34,7 +34,7 @@ const License = () => {
                   MinIO Console is licensed under the GNU Affero General Public License (AGPL) Version 3.0.
                 </p>
                 <p>
-                  For more information, please refer to the license at <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">https://www.gnu.org/licenses/agpl-3.0.en.html</a>.
+                  For more information, please refer to the license at <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">https://www.gnu.org/licenses/agpl-3.0.en.html</a>.
                 </p>
               </Fragment>
             }
