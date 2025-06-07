@@ -66,7 +66,3 @@ export const getLogoApplicationVariant =
     }
   };
 
-export const registeredCluster = (): boolean => {
-  const plan = getLogoVar();
-  return ["standard", "enterprise", "enterpriseos"].includes(plan || "AGPL");
-};

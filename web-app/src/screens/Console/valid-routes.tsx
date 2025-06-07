@@ -90,7 +90,6 @@ const validateItem = (item: IMenuItem) => {
 
 export const validRoutes = (
   features: string[] | null | undefined,
-  licenseNotification: boolean = false,
 ) => {
   const ldapIsEnabled = (features && features.includes("ldap-idp")) || false;
   const kmsIsEnabled = (features && features.includes("kms")) || false;
@@ -247,7 +246,6 @@ export const validRoutes = (
       name: "License",
       id: "license",
       icon: <LicenseIcon />,
-      badge: licenseNotification,
       forceDisplay: true,
     },
   ];

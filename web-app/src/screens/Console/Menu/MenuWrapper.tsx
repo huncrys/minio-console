@@ -24,10 +24,8 @@ import { selFeatures } from "../consoleSlice";
 import {
   getLogoApplicationVariant,
   getLogoVar,
-  registeredCluster,
 } from "../../../config";
 import { useLocation, useNavigate } from "react-router-dom";
-import { getLicenseConsent } from "../License/utils";
 
 const MenuWrapper = () => {
   const dispatch = useAppDispatch();
@@ -38,21 +36,8 @@ const MenuWrapper = () => {
   const sidebarOpen = useSelector(
     (state: AppState) => state.system.sidebarOpen,
   );
-  const licenseInfo = useSelector(
-    (state: AppState) => state?.system?.licenseInfo,
-  );
 
-  const isAgplAckDone = getLicenseConsent();
-  const clusterRegistered = registeredCluster();
-
-  const { plan = "" } = licenseInfo || {};
-
-  let licenseNotification = true;
-  if (plan || isAgplAckDone || clusterRegistered) {
-    licenseNotification = false;
-  }
-
-  const allowedMenuItems = validRoutes(features, licenseNotification);
+  const allowedMenuItems = validRoutes(features);
 
   return (
     <Menu
